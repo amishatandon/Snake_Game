@@ -7,14 +7,14 @@ public class App {
 
         JFrame frame = new JFrame("Snake");
         frame.setVisible(true);
-	frame.setSize(boardWidth, boardHeight);
-        frame.setLocationRelativeTo(null);
+	frame.setSize(boardWidth, boardHeight);//frame dimensions
+        frame.setLocationRelativeTo(null);//open the window at the center of the frame.
         frame.setResizable(false);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//program will close on clicking x
 
         SnakeGame snakeGame = new SnakeGame(boardWidth, boardHeight);
         frame.add(snakeGame);
-        frame.pack();
+        frame.pack();//place the jpanel inside the frame
         snakeGame.requestFocus();
     }
 }

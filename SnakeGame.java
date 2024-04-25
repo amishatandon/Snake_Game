@@ -1,13 +1,13 @@
 import java.awt.*;
 import java.awt.event.*;
-import java.util.ArrayList;
-import java.util.Random;
+import java.util.ArrayList;// storing the segments of snake body
+import java.util.Random;// random values to place food on screen
 import javax.swing.*;
 
 public class SnakeGame extends JPanel implements ActionListener, KeyListener {
     private class Tile {
-        int x;
-        int y;
+        int x;//25
+        int y;//25
 
         Tile(int x, int y) {
             this.x = x;
